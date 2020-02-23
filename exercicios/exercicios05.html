@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Estudando JS</h1>
+        <p id="paragraph">Document Object Model <strong>DOM</strong></p>
+        <p>Estudanto atributos e alguns metodos</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus tempore incidunt mollitia explicabo voluptas, nihil ad? 
+            Sunt vel veniam quis quae in quasi, tempore culpa expedita nesciunt maiores voluptatum.</p>
+    </div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0];
+        var corpo = document.body
+        var p3 = document.getElementById('paragraph');
+        document.write(p1.innerText);
+        p1.style.color = 'purple';
+        corpo.style.background = 'violet';
+    </script>
+    <h1></h1>
+</body>
+</html>

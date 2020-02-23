@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#corpo{
+            background-color: burlywood;
+            width: 200px;
+            height: 200px;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="corpo" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+    </div>
+    <script>
+        var a = document.getElementById('corpo');
+
+        function clicar(){
+            a.innerText = 'Clicada';
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou';
+            a.style.background = 'black';
+        }
+        function sair(){
+            a.innerText = 'Sair';
+            a.style.background = 'purple';
+
+        }
+    </script>
+</body>
+</html>
