@@ -1,0 +1,18 @@
+div, h1{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+input{
+  background-color: aquamarine;  
+  padding: 5px;
+  border: 30px;
+}
+.danger{
+  text-align: center;
+  color: red;
+}
+.sucess{
+  text-align: center;
+  color: green;
+}
