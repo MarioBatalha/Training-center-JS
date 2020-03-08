@@ -1,12 +1,29 @@
-div, h1{
-    text-align: center;
-    position: relative;
-    margin: 20px;
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-input{
-  background-color: aquamarine;  
-  padding: 5px;
+body{
+  background-color:  aquamarine;  ;
+}
+div{
+  text-align: center;
+  position: relative;
+  margin-left: 30rem;
+  width: 30rem;
+  height: 30rem;
+  background-color: white;
+}
+.tn1, .tn2{ 
+  background-color: #cccc; 
+  position: relative;
+  padding: 7px;
+  width: 15rem;
   border: 30px;
+}
+.operacao{
+  background-color: green;
+  color: #ffffff;
+  height: 2rem;
+  width: 4rem;
 }
 .danger{
   text-align: center;
