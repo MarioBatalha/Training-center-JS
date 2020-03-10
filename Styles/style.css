@@ -12,24 +12,21 @@ div{
   height: 30rem;
   background-color: white;
 }
-.tn1, .tn2{ 
+#tn1, #tn2, #tn3, #tnome{ 
   background-color: #cccc; 
   position: relative;
   padding: 7px;
   width: 15rem;
   border: 30px;
 }
-.operacao{
-  background-color: green;
-  color: #ffffff;
-  height: 2rem;
-  width: 4rem;
-}
-.danger{
+#danger{
   text-align: center;
   color: red;
 }
-.sucess{
+#sucess{
   text-align: center;
   color: green;
+}
+#res{
+  color: black;
 }

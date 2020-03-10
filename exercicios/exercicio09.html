@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css"></link>
     <title>Document</title>
 </head>
-    <h1>Calculo da média aritmética</h1>
-    <input type="text" id="tnome" placeholder="Nome completo"></input>
-    <input type="number" name="tn1" id="tn1v" placeholder="primeira nota"></input>
-    <input type="number" name="tn2" id="tn2v" placeholder="segunda nota"></input>
-    <input type="number" name="tn3" id="tn3v" placeholder="terceira nota"></input>
-    <input type="submit" value="calcular" onsubmit="clicar()">
-
+  <div>
+    <strong>Calculo da média</strong></br></br></br>
+    <input type="text" id="tnome" placeholder="Nome completo"></input></br></br>
+    <input type="number" name="tn1" id="tn1" placeholder="primeira nota"></input></br></br>
+    <input type="number" name="tn2" id="tn2" placeholder="segunda nota"></input></br></br>
+    <input type="number" name="tn3" id="tn3" placeholder="terceira nota"></input></br></br>
+    <input type="submit" value="calcular" onclick="media()">
+    <p id="md"></p>
+  </div>
  <script>
      var nome = document.getElementById('tnome');
-     var n1 = document.getElementById('tn1v');
-     var n2 = document.getElementById('tn2v');
-     var n3 = document.getElementById('tn3v');
-     nt1  = Number(n1);
-     nt2 = Number(n2);
-     nt3 = Number(n3);
-     var media = (nt1 + nt2 + nt3)/3
+     var n1 = document.getElementById('tn1');
+     var n2 = document.getElementById('tn2');
+     var n3 = document.getElementById('tn3');
+     var md = document.getElementById('md');
 
-     if(media > 10){
-         console.log("Aprovado");
-     }else{
-         console.log("Reprovado");
+     function media(){
+       nt1  = Number(n1.value);
+       nt2 = Number(n2.value);
+       nt3 = Number(n3.value);
+       var media = (nt1 + nt2 + nt3)/3
+       media.toFixed(1);
+
+       if(media > 10){
+         md.innerHTML = "Parabéns! foste aprovado.";
+         md.style.color = 'green';
+       }else{
+         md.innerHTML = "Lamentamos! infelizmente foste reprovado.";
+         md.style.color = 'red';
+       }
      }
-
+    
  </script>   
 </body>
 </html>
