@@ -11,7 +11,7 @@ const sn =[
 const snPlus = [
     'Samuel',
     'Ricardo',
-    'Amilto'
+    'Amilton'
 ]
 const snGang = [...sn, ...snPlus];
 console.log(snGang);
