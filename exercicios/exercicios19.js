@@ -43,3 +43,13 @@ console.log(getNumber('Luis'));
        }
    }
    console.log(factorial(7));
+
+//Functions
+   const getIdade = () => console.log(22);
+
+   getIdade();
+
+   const getPessoa = (nome = 'Mario',
+                        idade='21') =>{
+        return  getPessoa();
+   }
