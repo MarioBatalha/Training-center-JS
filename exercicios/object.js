@@ -4,8 +4,13 @@ let carro = {
   modelo: 'Hiace',  
   cor: 'Preto',
   acentos: 5,
-  matricula: 'LD-90-04-MA'
+  matricula: 'LD-90-04-MA',
+  mover: function (){
+    console.log('conduzir');
+  }
 }
+car.mover();
+
 
 //second form
 const car = new Object();
