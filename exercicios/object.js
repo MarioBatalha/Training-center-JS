@@ -3,19 +3,20 @@ let carro = {
   marca: 'Toyota',
   modelo: 'Hiace',  
   cor: 'Preto',
-  acentos: 5,
+  acentos: 0,
   matricula: 'LD-90-04-MA',
-  mover: function (){
+  mover (a = 0){
     console.log('conduzir');
+    this.acentos += a
   }
 }
-car.mover();
-
+console.log(carro.mover());
+console.log(carro.acentos || 1);
 
 //second form
-const car = new Object();
+//const car = new Object();
 
 //three form
-const car = object.create();
+//const car = object.create();
 
 
