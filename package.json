@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@babel/preset-env": "^7.9.5"
+  },
+  "devDependencies": {
+    "babel-loader": "8.0.0-beta.0"
   }
 }
